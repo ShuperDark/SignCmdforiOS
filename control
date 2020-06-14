@@ -1,0 +1,9 @@
+Package: com.darkshuper.signcmdforios
+Name: SignCmdForiOS
+Depends: mobilesubstrate
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: An awesome MobileSubstrate tweak!
+Maintainer: DrakShuper
+Author: DrakShuper
+Section: Tweaks
