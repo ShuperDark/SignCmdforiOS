@@ -126,8 +126,6 @@ void _MinecraftClient_update(MinecraftClient* self) {
 
 MinecraftScreenModel* temp;
 
-//実行はできるけど、コマンドが実行された途端にクラッシュする。
-
 bool (*Item_useOn)(uintptr_t*, uintptr_t*, Player*, int, int, int, signed char, float, float, float);
 bool _Item_useOn(uintptr_t* self, uintptr_t* inst, Player* player, int x, int y, int z, signed char side, float xx, float yy, float zz) {
 
@@ -137,8 +135,6 @@ bool _Item_useOn(uintptr_t* self, uintptr_t* inst, Player* player, int x, int y,
 
 		if(model != nullptr) {
 			if(temp == nullptr) {
-
-				//おそらく、メモリ解放でクラッシュしてる？
 				temp = new MinecraftScreenModel();
 				MinecraftScreenModel$MinecraftScreenModel(temp, *model);
 			}
